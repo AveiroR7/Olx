@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>OLX - Buy and sell for free</title>
+		<link rel="icon" href="images/olx_logo.jpg">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+
+<body>
+
+
+    <div id="main">
+        <!-- header -->
+        <header>
+            <div class="top">
+                <div class="container">
+                    <div class="left">
+                        <div class="mainLogo">
+                            <a href="#">
+                                <img src="./images/olx_logo.jpg" alt="logo" >
+                            </a>
+                        </div>
+
+                        <div class="location">
+                            
+                            <div class="locateFieldDiv">
+                                <input type="text" placeholder="India" id="searchField">
+                                
+                            </div>
+                            
+                            
+                    
+                        </div>
+                       
+                        <div class="search">
+                            <div class="searchFieldDiv">
+                                <input type="text" placeholder="Search.." id="searchField">
+                               
+                            </div>
+                            
+                            <div class="searchBtnDiv">
+                                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="signinBtnDiv">
+                            <div class="dropdown">
+                                <button id="signinBtn" class="showSignoutBtnHover"><u>Login</u></button>
+                                <div class="dropdownContent" id="dropdownContent">
+                                    <a href="javascript:void(0)" id="myAds">My Ads</a>
+                                    <a href="javascript:void(0)" id="favorites">Favorites</a>
+                                    <a href="javascript:void(0)" id="signoutBtn">Sign out</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sellBtnDiv">
+                            <button id="sellBtn">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                   
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" id="browseCategories"> All Categories &nbsp; <i
+                                class="fas fa-angle-down"></i></a>
+                        <div class="dropdownContent">
+                            <a href="equipments.html" onclick="filter('Equipments')">Equipments</a>
+                            <a href="irrigation.html" onclick="filter('Irrigation')">Irrigation</a>
+                            <a href="fertilizer.html" onclick="filter('Fertilizers')">Fertilizers</a>
+                        </div>
+                    </div>
+                    <a href="irrigation.html" id="nav-one">Irrigation</a>
+                    <a href="equipments.html" id="nav-two">Equipments</a>
+                    <a href="fertilizer.html" id="nav-three">Fertilizers</a>
+                </div>
+            </div>
+            
+        </header>
+        <!-- /header -->
+
+        <!-- banner -->
+        <div class="mainBanner" id="mainBanner">
+            <img src="./images/slider.png   " alt="banner-image" id="mainBannerImg" witdth = "100vw" >
+        </div>
+        <!-- /banner -->
+        
+
+    <!--
+        <img class="mySlides" src="./images/Equipments/John-Deere-7R-350-Tractor_0720-copy.jpg">
+        <img class="mySlides" src="./images/Equipments/tractor.png">
+        <img class="mySlides" src="./images/Irrigation/rainpipe.jpg">
+        <img class="mySlides" src="./images/residential-water-pump-motor-500x500.jpg">
+
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    -->  
+    
+     
+    <div class="product-main">
+        <div class="product-container">
+            <div class="product-col-1">
+                <div class="product-images">
+                    <div class="product-main-img">
+                        <img src="images/tractor/unnamed2.jpg" alt="">
+
+                    </div>
+                    <div class="product-slider">
+
+                    </div>
+                </div>
+                <div class="prod-desp">
+                    <h3>Description</h3>
+                    Crompton motor pump
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi aperiam? Numquam sed quisquam quo ea, repellat accusamus neque totam minima voluptate nulla, enim et eaque! Quidem perferendis saepe accusamus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos distinctio incidunt eos assumenda soluta enim qui suscipit? Doloribus fugit nobis praesentium voluptas veritatis culpa, repellat ratione possimus quibusdam in.</p>
+                </div>
+            </div>
+
+            <div class="product-col-2">
+                <div class="prod-info">
+                    <h1>₹ 12,500,893</h1>
+
+                    Crompton Motor Pump
+                    Subhash Nagar, Delhi, Delhi
+                    Yesterday
+
+                </div>
+                <div class="seller-information">
+                    <h3>Seller description</h3>
+
+
+
+                    <div class="seller-info">
+                        <img src="./images/ads/logo.jpg" alt="" class="seller-image">
+                        <div class="seller-metadata">
+                            <div class="seller-creator">Seller</div>
+                            <div class="faded-text">Member since Oct 2020</div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="seller-btn">
+                        <button class="seller-chat">Chat with Us</button>
+                    </div>
+
+
+
+
+                </div>
+                <!--
+            <div class="seller-location">
+            </div>
+            -->
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+           
+
+
+        <!--/ITEMS ENDS-->
+
+        <!-- footer -->
+        <div class="end-bar">
+            <img src="images/endimg.webp" alt="footer logo" class="end">
+            <div class="txt-box">
+                <h1>Try the olx app</h1>
+                <p>Buy, sell and find just about anything using the app on your mobile.</p>
+            </div>
+            <div class="vr"></div>
+            <div class="apps-info">
+               &nbsp; Get your app today
+                <div class="app">
+                    <img src="images/appstore_2x.webp" alt="" width="120px">
+                    <img src="images/playstore_2x.webp" alt="" width="120px">
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <div class="top">
+                <div class="container">
+                    <div class="oneFifth">
+                        <h3>Popular Categories</h3>
+                        <a href="#">Irrigation</a><br>
+                        <a href="#">Equipments</a><br>
+                        <a href="#">Fertilizers</a><br>
+                    </div>
+                    <div class="oneFifth">
+                        <h3>About us</h3>
+                        <a href="#">About OLX Group</a><br>
+                        <a href="#">OLX Blog</a><br>
+                        <a href="#">Contact us </a><br>
+                    </div>
+                    <div class="oneFifth">
+                        <h3>Olx</h3>
+                        <a href="#">Help</a><br>
+                    </div>
+                    <div class="oneFifth footerSocial">
+                        <h3>Follow us</h3>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="left">
+                        <span> Developed by Rahul Wasnik, Rupali Bhange, Rohit Posugade.                        
+                        </span>
+                    </div>
+                    <div class="right">
+                        <span class="copyrights">
+                            Copyrights &copy; OLX, 2021.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+
+   
+    <!-- js -->
+    <script src="js/custom.js"></script>
+    
+</body>
+
+</html>
